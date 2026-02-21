@@ -1,0 +1,416 @@
+
+
+.menu_bar {
+    background-color: rgba(148, 146, 156, 0.618);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+   font-family: "Tinos", serif;
+  font-style: normal;
+    
+}
+
+.logo span {
+    color: rgb(0, 0, 0);
+         font-family: "Tinos", serif;
+  font-style: normal;
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_bar ul li {
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+
+.menu_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+} 
+
+.menu_bar ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+
+.menu_bar ul li:hover::after {
+   width: 100%;
+}
+
+body {
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/review.webp);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+.text-box {
+    width: 70%;
+    color: rgb(0, 0, 0);
+    position: sticky;
+    text-align: center;
+    left: 16%;
+    transform: translate(1%,50%);
+}
+
+.text-box h1 {
+    font-size: 60px;
+    color: white;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.text-box p{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+      font-family: "Newsreader", serif;
+  font-style: normal;
+  line-height: 1.5;
+}
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.link:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background: red;
+    transition: 1s;
+}
+
+/*------ Summary-----*/
+
+.Summary{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.picture-coloumn{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.picture-coloumn img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+        background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.popup {
+      color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 62px;
+    color: white;
+}
+
+.points{
+    list-style-type: none;
+    border: 2px solid white;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.698);
+}
+
+.rows {
+    margin-top: 5%;
+    display: flex;
+} 
+
+.picture-coloumns{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.picture-coloumns img{
+  width: 100%;
+    display: block;
+    align-items: center;
+}
+
+.layers{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.layers h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    bottom: 0%;
+    position: absolute;
+    opacity: 1;
+
+
+}
+
+.popups{
+        text-decoration: none;
+        color: #ffffff;
+        border: 2px solid #f4433670;
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.28);
+        transition: 0.5s;
+        font-family: "Newsreader", serif;
+  font-style: normal;
+}
+.popups:hover{
+    background-color: #f4433670;
+}
+
+table th {
+    border: 1px solid white;
+    display: table-cell;
+}
+
+table {
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+}
+
+table th {
+    color: #ffffff;
+}
+.picture {
+    display: flex;
+    justify-content:center;
+}
+.text h1 {
+     font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.picture-2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+h2 {
+    display: flex;
+justify-content: center;
+}
+h3{
+     font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+.texts h5 {
+    font-size: 50px;
+    color: #ffffff;
+    position: sticky;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.Mens {
+    color: #ffffff;
+}
+
+.L {
+    float: left;
+    padding-right: 20px;
+    position: sticky;
+}
+
+.R {
+    float: right;
+    padding-left: 20px;
+    position: sticky;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    position: sticky;
+    font-family: "Newsreader", serif;
+  font-style: normal;
+}
+
+.Fl {
+    padding-left: 45rem;
+}
+
+.call {
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+.phone {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.number {
+    padding-top: 100px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 25px;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.number {
+    border: 2px solid white;
+    width: 50%;
+    text-decoration: underline;
+}
+
+.loc {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.LOCA {
+    padding-top: 200px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 25px;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.LOCA {
+    border: 2px solid white;
+    width: 50%;
+    text-decoration: underline;
+    height: 20%
+}
+.pin {
+       padding-top: 100px;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    padding-top: 450px;
+}
+
+.Note {
+    padding-top: 100px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 25px;
+       font-family: "Tinos", serif;
+  font-style: normal;
+}
+.Note {
+    border: 2px solid white;
+    width: 50%;
+    text-decoration: underline;
+    height: 20%
+}
+.Mail {
+       padding-top: 320px;
+       color: #ffffff;
+       text-decoration: underline;
+}
+
+
+
+
+
+
+
